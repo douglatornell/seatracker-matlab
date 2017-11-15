@@ -1,7 +1,7 @@
 function [tcorrs, u_coords, v_coords, w_coords, u, v, w, nextindex, e3w] = ...
     update_arrays(totaldepth, e3w0, e3w, tcorrs, u_coords, v_coords, w_coords, u, v, w, deltat, nextindex)
     tcorrs = tcorrs + deltat;
-    nextindex = nextindex + 1
+    nextindex = nextindex + 1;
     [udataset, vdataset, wdataset, tdataset, useindex] = find_dataset(nextindex);
     u_coords(1, 1:length(tcorrs)) = tcorrs;
     u_coords(1, length(tcorrs)+1:end) = max(tcorrs);
