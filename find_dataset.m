@@ -6,7 +6,7 @@ function [udataset, vdataset, wdataset, tdataset, useindex] = find_dataset(nexti
         useindex = nextindex
     elseif nextindex <= 48;
         datefield = '10apr16';
-        useindex = nextindex-24;
+        useindex = nextindex-24
     else
         'problem, out of data'
     end
